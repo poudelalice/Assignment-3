@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Styling the main page background */
+/* Style the main page background */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* Purple gradient background */
@@ -17,11 +17,11 @@ body {
 /* Main white container that holds all content */
 .container {
     max-width: 1200px; /* Don't get too wide on large screens */
-    margin: 0 auto; /* Centering the container */
+    margin: 0 auto; /* Center the container */
     background: white;
     border-radius: 15px;
     padding: 30px;
-    /* Adding shadow for depth effect */
+    /* Add shadow for depth effect */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -41,14 +41,14 @@ p {
 
 /* Container for the search input and button */
 .search-box {
-    display: flex; /* Putting input and button side by side */
+    display: flex; /* Put input and button side by side */
     gap: 10px; /* Space between input and button */
     margin-bottom: 30px;
 }
 
-/* Styling the search input box */
+/* Style the search input box */
 #searchInput {
-    flex: 1; /* Taking up remaining space */
+    flex: 1; /* Take up remaining space */
     padding: 12px;
     font-size: 16px;
     border: 2px solid #ddd;
@@ -61,7 +61,7 @@ p {
     border-color: #667eea;
 }
 
-/* Styling the search button */
+/* Style the search button */
 #searchBtn {
     padding: 12px 30px;
     font-size: 16px;
@@ -80,10 +80,31 @@ p {
 
 /* Container that will hold all the GIF results */
 #gifContainer {
-    display: grid; /* Using grid layout for nice columns */
+    display: grid; /* Use grid layout for nice columns */
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
     gap: 20px; /* Space between GIFs */
     margin-bottom: 30px;
+}
+
+/* Style each individual GIF item */
+.gif-item {
+    border-radius: 8px;
+    overflow: hidden; /* Round the corners of GIFs */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Smooth animation */
+}
+
+/* Make GIF zoom slightly when you hover over it */
+.gif-item:hover {
+    transform: scale(1.05); /* Zoom to 105% */
+}
+
+/* Make sure GIF images fill their container properly */
+.gif-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Fill the space nicely */
+    display: block; /* Remove any extra space below image */
 }
 
 /* Box that contains the documentation link */
@@ -101,7 +122,7 @@ p {
     font-weight: bold;
 }
 
-/* When hovering over the link add underline */
+/* When you hover over the link, add underline */
 .documentation-link a:hover {
     text-decoration: underline;
 }
