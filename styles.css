@@ -9,7 +9,7 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     /* Purple gradient background */
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #eb62cd 0%, #764ba2 100%);
     min-height: 100vh;
     padding: 20px;
 }
@@ -159,7 +159,7 @@ p {
 /* NEW: Rating badge style */
 .gif-rating {
     display: inline-block;
-    background: #667eea;
+    background: #ea66d4;
     padding: 2px 8px;
     border-radius: 4px;
     font-size: 12px;
@@ -176,7 +176,7 @@ p {
 
 /* Style for the link itself */
 .documentation-link a {
-    color: #667eea; /* Purple color to match theme */
+    color: #e15ba5; /* Pink color to match theme */
     text-decoration: none; /* Remove underline */
     font-weight: bold;
 }
