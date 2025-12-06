@@ -1,0 +1,59 @@
+/* Reset default browser styles so everything looks consistent */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styling the main page background */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Main white container that holds all content */
+.container {
+    max-width: 1200px; /* Don't get too wide on large screens */
+    margin: 0 auto; /* Centering the container */
+    background: white;
+    border-radius: 15px;
+    padding: 30px;
+    /*added shadow for depth effect */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Main heading style */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Paragraph text style */
+p {
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Box that contains the documentation link */
+.documentation-link {
+    background: #f0f0f0; /* Light gray background */
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+/* Style for the link itself */
+.documentation-link a {
+    color: #667eea; /* Purple color to match theme */
+    text-decoration: none; /* Removed underline */
+    font-weight: bold;
+}
+
+/* When hovering over the link add underline */
+.documentation-link a:hover {
+    text-decoration: underline;
+}
