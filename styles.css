@@ -8,7 +8,8 @@
 /* Styling the main page background */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-       background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    /* Purple gradient background */
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     padding: 20px;
 }
@@ -20,7 +21,7 @@ body {
     background: white;
     border-radius: 15px;
     padding: 30px;
-    /*added shadow for depth effect */
+    /* Adding shadow for depth effect */
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
 }
 
@@ -38,6 +39,53 @@ p {
     margin-bottom: 20px;
 }
 
+/* Container for the search input and button */
+.search-box {
+    display: flex; /* Putting input and button side by side */
+    gap: 10px; /* Space between input and button */
+    margin-bottom: 30px;
+}
+
+/* Styling the search input box */
+#searchInput {
+    flex: 1; /* Taking up remaining space */
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+}
+
+/* Change border color when user clicks in the input */
+#searchInput:focus {
+    outline: none;
+    border-color: #667eea;
+}
+
+/* Styling the search button */
+#searchBtn {
+    padding: 12px 30px;
+    font-size: 16px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer; /* Show hand cursor on hover */
+    font-weight: bold;
+}
+
+/* Make button darker when you hover over it */
+#searchBtn:hover {
+    background: #5568d3;
+}
+
+/* Container that will hold all the GIF results */
+#gifContainer {
+    display: grid; /* Using grid layout for nice columns */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive columns */
+    gap: 20px; /* Space between GIFs */
+    margin-bottom: 30px;
+}
+
 /* Box that contains the documentation link */
 .documentation-link {
     background: #f0f0f0; /* Light gray background */
@@ -49,7 +97,7 @@ p {
 /* Style for the link itself */
 .documentation-link a {
     color: #667eea; /* Purple color to match theme */
-    text-decoration: none; /* Removed underline */
+    text-decoration: none; /* Remove underline */
     font-weight: bold;
 }
 

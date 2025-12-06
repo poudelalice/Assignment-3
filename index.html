@@ -13,6 +13,15 @@
         <h1>Giphy API Demo</h1>
         <p>Search for GIFs using the Giphy API</p>
         
+        <!-- Search form where users can type what GIFs they want -->
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search for GIFs... (e.g., cats, dogs, funny)">
+            <button id="searchBtn">Search</button>
+        </div>
+        
+        <!-- This div will hold all the GIFs that come back from the API -->
+        <div id="gifContainer"></div>
+        
         <!-- Link to the official Giphy documentation-->
         <div class="documentation-link">
             <p>Documentation: <a href="https://developers.giphy.com/docs/api" target="_blank">Giphy API Documentation</a></p>
